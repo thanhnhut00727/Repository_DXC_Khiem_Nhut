@@ -8,10 +8,16 @@
     margin-top: 45px;
 }
 #dataAllJob{
-    display:flex;
+    width:80%;
+    display: flex;
     flex-direction: column;
+    border: 1px solid #cceaff;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 15px;
+    background: #f1f1f1;
 }
-#status{
+.Open{
     background:green;
     padding:10px;
     position:absolute;
@@ -19,3 +25,89 @@
     color: white;
     left:70%;
 }
+.Close{
+    background:red;
+    padding:10px;
+    position:absolute;
+    font-weight: bold;
+    color: white;
+    left:70%;
+}
+#tableWP{
+    border: 1px solid;
+    box-sizing: border-box;
+}
+#title {
+    color: white;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid;
+    background: #3b5998;
+    font-weight: bold;
+}
+
+/*============================*/
+
+/* Breadcrumb
+
+/*============================*/
+
+ 
+
+/* Hide the text for the home link */
+
+.breadcrumb a.home { color: transparent;font-size:1px;vertical-align:middle;}
+
+.breadcrumb a.home:hover { color: transparent; }
+
+ 
+
+/* Add the 'home' icon from Google's Material Design Icons */
+
+.breadcrumb a.home:before { font-family: "Material Icons"; content: '\E88A'; font-size: 24px; color: #d1d1d1; width: 20px; height: 20px; overflow: hidden; vertical-align: middle; outline: none; border: 0; box-shadow: none; background: transparent; }
+
+.breadcrumb a.home:hover:before { color: #fff !important; }
+
+ 
+
+/* Begin breadcrumb wrap style */
+
+.breadcrumb { display: inline-block; border-radius: 5px; overflow: hidden; border: 1px solid #e1e1e1;margin-bottom:35px; }
+
+ 
+
+.breadcrumb a { display: inline-block; font-size: 12px; line-height: 28px; color: #222; position: relative; text-align: center; }
+
+.breadcrumb a:first-child { padding-left: 26px; border-radius: 5px 0 0 5px; }
+
+.breadcrumb a:after { content: ''; position: absolute; top: 0; right: -14px; width: 28px; height: 28px; transform: scale(0.707) rotate(45deg); z-index: 1; box-shadow: 1px -1px 0 1px #e1e1e1; border-radius: 0 5px 0 50px; }
+
+ 
+
+/* Set the color for the current breadcrumb node */
+
+.breadcrumb .current {color: #0072C6;}
+
+ 
+
+/* Tidy up the position on our custom css classes we added to each breadcrumb node */
+
+.breadcrumb a.home { padding-left: 12px; }
+
+.breadcrumb a.bc-node { padding-right: 10px; }
+
+.breadcrumb .current { padding: 0 15px; margin-left: 10px; }
+
+ 
+
+/* Breadcrumb hover styles */
+
+.breadcrumb a,
+
+.breadcrumb a:after { background: #fff; color: #222; transition: all 0.35s ease-in-out; }
+
+.breadcrumb a:hover,
+
+.breadcrumb a:hover:after { background: #0072C6; color:#fff; }
+
+.breadcrumb a:hover:before { color: #0072C6; }

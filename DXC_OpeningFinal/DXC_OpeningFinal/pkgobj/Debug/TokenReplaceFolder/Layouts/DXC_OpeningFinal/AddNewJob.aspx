@@ -6,7 +6,7 @@
 <%@ Import Namespace="Microsoft.SharePoint" %>
 <%@ Assembly Name="Microsoft.Web.CommandUI, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddNewJob.aspx.cs" Inherits="DXC_OpeningFinal.Layouts.DXC_OpeningFinal.AddNewJob" DynamicMasterPageFile="~masterurl/default.master" %>
-<%@ Register TagPrefix="wssuc" TagName="Control_AddNewJob"  Src="../../../_controltemplates/15/DXC_OpeningFinal/Control_AddNewJob.ascx" %>
+<%@ Register TagPrefix="wssuc" TagName="Control_AddNewJob" Src="../../../_controltemplates/15/DXC_OpeningFinal/Control_AddNewJob.ascx" %>
 
 <asp:Content ID="PageHead" ContentPlaceHolderID="PlaceHolderAdditionalPageHead" runat="server">
 
@@ -14,9 +14,10 @@
 
 <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
 
-          <wssuc:Control_AddNewJob runat="server" ID="Control_AddNewJob"></wssuc:Control_AddNewJob>
-    
+        <asp:SiteMapPath PathSeparator="" SiteMapProvider="CurrentNavSiteMapProviderNoEncode" ID="SiteMapPath1" SkipLinkText="" NodeStyle-CssClass="ms-sitemapdirectional" runat="server" RenderCurrentNodeAsLink="True">
+        </asp:SiteMapPath>
 
+    <wssuc:Control_AddNewJob runat="server" ID="Control_AddNewJob"></wssuc:Control_AddNewJob>
 </asp:Content>
 
 <asp:Content ID="PageTitle" ContentPlaceHolderID="PlaceHolderPageTitle" runat="server">
